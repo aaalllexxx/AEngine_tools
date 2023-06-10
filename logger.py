@@ -1,7 +1,5 @@
 import datetime
 from rich import print
-
-from aecf_reader import Config
 from banner_string import BannerString
 
 

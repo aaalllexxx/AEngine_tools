@@ -1,4 +1,5 @@
 from rich import print
+from Debug import Program
 
 
 class AEngineError:
@@ -9,6 +10,7 @@ class AEngineError:
 
     def __init__(self, *data):
         self.data = data
+        Program.errors += 1
 
     def __str__(self):
         classname = str(str(type(self)).split(self.__module__)[1][1:].split("\'")[0])
@@ -17,6 +19,9 @@ class AEngineError:
     def send(self):
         print(f"[red]{self}[/red]")
         raise SystemError(self.exit_code)
+
+    def catch(self):
+        print(f"[red]{self}[/red]")
 
 
 class FileExtensionError(AEngineError):

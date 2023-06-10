@@ -1,0 +1,35 @@
+{
+    "time_metrics": {
+        "program_time": 2.276047468185425,
+        "average_delta": 0.12083162201775445,
+        "longest_delta": 0.7180001735687256
+    },
+    "system_metrics": {
+        "cpu": {
+            "percent": 0.0,
+            "freq": [
+                991.0,
+                0.0,
+                1190.0
+            ],
+            "times": [
+                169712.609375,
+                110937.28125000047,
+                2372506.3437499995,
+                9544.125,
+                8071.125
+            ]
+        },
+        "memory": {
+            "total": 8361132032,
+            "available": 1532825600,
+            "percent": 81.7,
+            "used": 6828306432,
+            "free": 1532825600
+        }
+    },
+    "program_metrics": {
+        "loops_count": 18,
+        "errors_count": 1
+    }
+}
